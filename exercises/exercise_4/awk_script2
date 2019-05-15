@@ -1,0 +1,7 @@
+BEGIN  {
+FS=":"
+}
+{
+print "dn: uid=" $1 "dc=example, dx=com\n"
+}
+END {}

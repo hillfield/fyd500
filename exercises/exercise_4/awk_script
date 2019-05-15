@@ -1,0 +1,10 @@
+BEGIN  {
+	FS=":"
+}
+{
+	print "\ndn: uid=" $1 ", dc=example, dx=com\n" \
+	"cn: " $2 " " $3 "\n" \
+	"sn: " $3 "\n"\
+	"telephoneNumber: " $4 "\n"
+}
+END {}

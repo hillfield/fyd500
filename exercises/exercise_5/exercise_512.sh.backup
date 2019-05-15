@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+# Unset parameters
+unset h s m p help
+
+# Get opts does not support long options i.e. --help
+
+#Parse arguments
+while getopts ${_GETOPTS} opt; do
+  case $opt in
+    h)
+      echo "-a was triggered!"
+      ;;
+    s)
+      echo "-a was triggered!" >&2
+      ;;
+    m)
+      echo "-a was triggered!" >&2
+      ;;
+    p)
+      echo "-a was triggered!" >&2
+      ;;
+    help)
+      echo "-a was triggered!" >&2
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
+
+# Check 
+
+
+## Clear the terminal
+#clear
+#
+## Assign mem and swp to free memory and swap
+#mem=$(free -hm | awk  'NR==2 { print $3}')
+#swp=$(free -hm | awk  'NR==3 { print $3}')
+#
+## Print values
+#printf "\$HOME\t\t=%s\n\$SHELL\t\t=%s\nPhys. mem\t=%s\nSwap\t\t=%s\n" \
+#	"$(pwd)" ${SHELL} ${mem} ${swp}
+#
