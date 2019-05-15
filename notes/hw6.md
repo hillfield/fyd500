@@ -1,4 +1,4 @@
-#FYD500 - Homework V
+#FYD500 - Homework VI
 The first number of assignments for FYD500, an introduction to linux.
 
 ##Advanced shell variables

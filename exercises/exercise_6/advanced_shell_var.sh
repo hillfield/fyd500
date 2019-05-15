@@ -37,37 +37,3 @@ do
 	shift
 done
 
-
-	
-
-#
-#while [[ $# -gt 0 ]]
-#do
-#key="$1"
-#
-#
-#
-#
-#
-#case $key in
-#	--VAR1|-v1)
-#		shift
-#		shift
-#		;;
-#	--VAR2|-v2)
-#		shift
-#		shift
-#		;;
-#	--VAR3|-v3)
-#		shift
-#		shift
-#		;;
-#	--VAR4|-v4)
-#		shift
-#		shift
-#		;;
-#	*)
-#		;;
-#
-#esac
-#done
