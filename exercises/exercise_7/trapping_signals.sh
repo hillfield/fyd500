@@ -1,5 +1,7 @@
 #/bin/bash
 # Ctrl+C is the same thing as SIGSTOP
+trap exit 0 EXIT
+
 trap 'sleep_trapping' SIGSTOP SIGINT
 
 sleep_trapping() {
@@ -12,14 +14,14 @@ sleep_trapping() {
 		echo "Continuing..."
 	else
 		echo "Good bye..."
-		break
+		exit 0
 	fi	
 }
 
 # Main script
-sleep 3600 &
-sleep 3600 &
 while :
 do
+	sleep 15 &
+	sleep 15 &
 	wait
 done
